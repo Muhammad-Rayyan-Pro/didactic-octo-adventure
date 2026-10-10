@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master | JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="quiz-container">
+        <header class="quiz-header">
+            <div class="logo">QUIZ<span>MASTER</span></div>
+            <p>Test your web development knowledge</p>
+        </header>
+
+        <section id="quiz-screen">
+            <div class="quiz-info">
+                <span id="question-count">Question 1 of 4</span>
+                <span id="score-display">Score: 0</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h2 id="question">Question will appear here</h2>
+
+            <div id="options-container"></div>
+
+            <div class="quiz-footer">
+                <p id="feedback" aria-live="polite"></p>
+                <button id="next-btn" disabled>Next Question →</button>
+            </div>
+        </section>
+
+        <section id="result-screen" hidden>
+            <div class="result-icon">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p class="result-subtitle">Here is your final result</p>
+
+            <div class="score-circle">
+                <span id="final-score">0/4</span>
+                <small>Your Score</small>
+            </div>
+
+            <h3 id="result-message">Good job!</h3>
+            <p id="result-details"></p>
+
+            <button id="restart-btn">↻ Restart Quiz</button>
+        </section>
+
+        <footer class="quiz-bottom">
+            Made for learners ❤️
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
